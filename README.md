@@ -196,25 +196,23 @@ heart_disease_tabpfn_errors.csv
 A recommended repository structure is:
 
 ```text
-Heart-Disease-Prediction/
+Heart Disease Prediction Using Machine Learning/
 │
-├── Python_Final(4)_with_saved_figures.ipynb
-├── heart-disease.csv
-├── README.md
-├── requirements.txt
-├── environment.yml
+├── data/
+│   └── heart_statlog_cleveland_hungary_final.csv
 │
-├── figures/
-│   ├── figure_4_1_target_distribution.png
-│   ├── figure_4_2_numerical_feature_distributions.png
-│   ├── figure_4_3_feature_correlation_heatmap.png
-│   └── ...
+├── outputs/
+│   ├── Chest Pain Type vs Target.png
+│   ├── Exercise-Induced Angina vs Target.png
+│   ├── Feature Correlation Heatmap.png
+│   ├── .....
 │
-└── results/
-    ├── heart_disease_model_comparison.csv
-    ├── heart_disease_cv_results.csv
-    ├── heart_disease_final_test_results.csv
-    └── heart_disease_tabpfn_errors.csv
+├── src/
+│   └── Python_Final.ipynb
+│
+├── .gitattributes
+├── Heart Disease Prediction Using Machine Learning...
+└── README.md
 ```
 
 The exact filenames may vary depending on the submitted notebook version.
@@ -286,18 +284,3 @@ The train/test split is stratified, and model evaluation uses stratified 5-fold 
 This project is intended for **academic machine-learning evaluation only**.
 
 Predictions should **not** be used to diagnose heart disease or make medical decisions. Real-world use would require independent clinical validation, assessment across relevant patient groups, and professional clinical oversight.
-
-## Team
-
-- **Saif Al Sami** — Team Lead; TabPFN Model
-- **Md. Rezoyanul Islam Ananno** — Logistic Regression, Random Forest & KNN
-- **Benazir Newaz Khan** — Mitra Model
-- **Md. Nazrul Islam Nabil** — TabICLv2 Model
-
-## References
-
-- Kaggle — Heart Disease Dataset: https://www.kaggle.com/datasets/eishkaran/heart-disease
-- UCI Machine Learning Repository: https://archive.ics.uci.edu/
-- Scikit-learn Documentation: https://scikit-learn.org/
-- Hollmann, N., Müller, S., Eggensperger, K., & Hutter, F. (2022). *TabPFN: A Transformer That Solves Small Tabular Classification Problems in a Second.* https://arxiv.org/abs/2207.01848
-- Qu, J., Holzmüller, D., Varoquaux, G., & Le Morvan, M. (2026). *TabICLv2: A better, faster, scalable, and open tabular foundation model.* https://arxiv.org/abs/2602.11139
